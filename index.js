@@ -111,11 +111,9 @@ class Board {
       }
     }
     let inversions = this.getInversions(arr);
-    console.log(`Inversions: ${inversions}`);
     if (this.getSize() % 2 !== 0) {
       return inversions % 2 === 0;
     } else {
-      console.log(`Zero Row: ${this.getZeroRow()}`);
       return (inversions + this.getZeroRow()) % 2 !== 0;
     }
   }
@@ -325,7 +323,6 @@ class Solver {
             parent = parent.previous;
           }
           this.solution.push(initialBoard);
-          console.log(Object.keys(closed).length);
           break;
         }
       } else {
@@ -335,7 +332,6 @@ class Solver {
             parent = parent.previous;
           }
           this.solution.push(initialBoard);
-          console.log(Object.keys(closed).length);
           break;
         }
       }
@@ -489,7 +485,6 @@ solveButton.addEventListener("click", () => {
       board[i][j] = parseInt(inputValue[i][j]);
     }
   }
-  console.log(board);
   if (isCorrectInput(board)) {
     Board.goal = createGoal(inputValue.length);
     Board.goalTwo = createGoalTwo(inputValue.length);
