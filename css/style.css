@@ -27,6 +27,12 @@ body {
   opacity: 0;
 }
 
+@media only screen and (max-width: 800px) {
+  .info--bar {
+    width: 100%;
+  }
+}
+
 .header--main {
   font-size: 4rem;
   text-align: center;
@@ -38,6 +44,15 @@ body {
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
+}
+
+@media only screen and (max-width: 800px) {
+  .main {
+    margin: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .info {
