@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #212121;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.info--bar {
+  font-size: 3rem;
+  text-align: center;
+  background-color: #38c354;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+}
+
+.header--main {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.main {
+  margin: 5rem;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.info {
+  border: 1px solid black;
+  /* flex: 1 1 0px; */
+  width: 30%;
+}
+
+.header--5 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.info--content {
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  /* flex: 1 1 0px; */
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  font-size: 1.3rem;
+}
+
+.textarea {
+  width: 15rem;
+  height: 15rem;
+}
+
+.solve--button {
+  height: 5rem;
+  width: 5rem;
+  margin-top: 2rem;
+  border-radius: 10rem;
+  border: 2px solid black;
+  text-transform: uppercase;
+  background-color: #5cdf76;
+  transition: all 0.2s;
+}
+
+.solve--button:hover {
+  background-color: #38c354;
+}
+
+.solve--button:active {
+  box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+.goal {
+  /* flex: 1 1 0px; */
+  width: 30%;
+}
+
+.goal--buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.goal--button {
+  box-sizing: content-box;
+  height: 8rem;
+  width: 8rem;
+  padding: 1rem;
+  font-size: 2rem;
+  margin-right: 5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #5cdf76;
+  transition: 0.2s all;
+}
+
+.goal--button:hover {
+  background-color: #38c354;
+}
+
+.goal--button:active {
+  box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.goal--button-active {
+  box-sizing: content-box;
+  border: 8px double black;
+}
+
+.header--3 {
+  font-size: 3rem;
+}
+
+.solution {
+  margin-left: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.board {
+  margin: 0px auto;
+  display: grid;
+  /* grid-template-columns: repeat(2, 5rem); */
+  row-gap: 0px;
+  column-gap: 0rem;
+  /* grid-auto-rows: minmax(100px, auto); */
+  margin-bottom: 3rem;
+}
+
+.tile {
+  width: 5rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 5rem;
+  background-color: #5cdf76;
+  border: 1px solid black;
+}

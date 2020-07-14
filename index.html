@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Puzzle Solver</title>
+  </head>
+  <body>
+    <h2 class="info--bar">Calculating...</h2>
+    <h1 class="header--main">SLIDING PUZZLE SOLVER</h1>
+  </body>
+  <main class="main">
+    <div class="info">
+      <h5 class="header--5">INSTRUCTIONS</h5>
+      <div class="info--content">
+        Enter your initial node state in the given text-box. Separate out your
+        digits with commas. After entering one row, enter the next row on a new
+        line.<br />
+        For the blank tile, enter 0. <br />
+        Example:<br />
+        3,1,2<br />
+        4,5,8<br />
+        6,0,7<br />
+      </div>
+    </div>
+    <div class="game">
+      <label class="label" for="node--input">ENTER:</label>
+      <textarea class="textarea" id="node--input" name="node--input">
+Please enter your starting node here...</textarea
+      >
+      <button class="solve--button">Solve!</button>
+    </div>
+    <div class="goal">
+      <h3 class="header--3">CHOOSE GOAL STATE:</h3>
+      <div class="goal--buttons">
+        <button class="goal--one goal--button goal--button-active">
+          BLANK TILE LAST
+        </button>
+        <button class="goal--two goal--button">BLANK TILE FIRST</button>
+      </div>
+    </div>
+  </main>
+  <section class="solution">
+    <!-- <div class="board">
+      <div class="tile">2</div>
+      <div class="tile">3</div>
+      <div class="tile">4</div>
+      <div class="tile">1</div>
+      <div class="tile">2</div>
+      <div class="tile">3</div>
+      <div class="tile">3</div>
+      <div class="tile">1</div>
+      <div class="tile">1</div>
+    </div>
+    <div class="board">
+      <div class="tile">2</div>
+      <div class="tile">3</div>
+      <div class="tile">4</div>
+      <div class="tile">1</div>
+      <div class="tile">2</div>
+      <div class="tile">3</div>
+      <div class="tile">3</div>
+      <div class="tile">1</div>
+      <div class="tile">1</div>
+    </div>
+    <div class="board">
+      <div class="tile">2</div>
+      <div class="tile">3</div>
+      <div class="tile">4</div>
+      <div class="tile">1</div>
+      <div class="tile">2</div>
+      <div class="tile">3</div>
+      <div class="tile">3</div>
+      <div class="tile">1</div>
+      <div class="tile">1</div>
+    </div>
+    <div class="board">
+      <div class="tile">2</div>
+      <div class="tile">3</div>
+      <div class="tile">4</div>
+      <div class="tile">1</div>
+      <div class="tile">2</div>
+      <div class="tile">3</div>
+      <div class="tile">3</div>
+      <div class="tile">1</div>
+      <div class="tile">1</div>
+    </div> -->
+  </section>
+  <script src="./index.js"></script>
+</html>
+
+<!--
+
+4,3,1
+2,8,6
+0,7,5
+
+
+-->
