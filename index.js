@@ -503,7 +503,7 @@ solveButton.addEventListener("click", () => {
       infoBar.innerHTML = "Puzzle is insolvable! Try with a different puzzle!";
       infoBar.style.backgroundColor = "#DB3737";
       infoBar.style.opacity = "1";
-      window.setTimeout(hideAlert, 5000);
+      window.setTimeout(hideAlert, 2000);
     } else {
       let solutionObj;
       try {
@@ -513,7 +513,7 @@ solveButton.addEventListener("click", () => {
         infoBar.innerHTML = "Invalid input! Please try again!";
         infoBar.style.backgroundColor = "#DB3737";
         infoBar.style.opacity = "1";
-        window.setTimeout(hideAlert, 5000);
+        window.setTimeout(hideAlert, 2000);
         return;
       }
       let end = new Date().getTime();
@@ -521,7 +521,7 @@ solveButton.addEventListener("click", () => {
       infoBar.innerHTML = `Solved! Time taken: ${time} ms.`;
       infoBar.style.opacity = "1";
       infoBar.style.backgroundColor = "#38c354";
-      window.setTimeout(hideAlert, 5000);
+      window.setTimeout(hideAlert, 2000);
       const solution = solutionObj.solution;
       let board;
       for (let i = solution.length - 1; i >= 0; i--) {
@@ -549,7 +549,7 @@ solveButton.addEventListener("click", () => {
     infoBar.innerHTML = "Invalid input! Please try again!";
     infoBar.style.backgroundColor = "#DB3737";
     infoBar.style.opacity = "1";
-    window.setTimeout(hideAlert, 5000);
+    window.setTimeout(hideAlert, 2000);
     //infoBar.style.opacity = "0";
   }
 });
