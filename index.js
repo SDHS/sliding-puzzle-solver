@@ -518,7 +518,6 @@ solveButton.addEventListener("click", () => {
       }
       let end = new Date().getTime();
       let time = end - start;
-      console.log(`Time taken: ${time} ms.`);
       infoBar.innerHTML = `Solved! Time taken: ${time} ms.`;
       infoBar.style.opacity = "1";
       infoBar.style.backgroundColor = "#38c354";

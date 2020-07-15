@@ -24,12 +24,17 @@ body {
   background-color: #38c354;
   padding: 1rem;
   margin-bottom: 2rem;
+  border: 2px solid black;
   opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 @media only screen and (max-width: 800px) {
   .info--bar {
     width: 100%;
+    margin-bottom: 2rem;
   }
 }
 
@@ -37,6 +42,13 @@ body {
   font-size: 4rem;
   text-align: center;
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .header--main {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .main {
@@ -48,9 +60,10 @@ body {
 
 @media only screen and (max-width: 800px) {
   .main {
-    margin: 1rem;
+    margin: 0rem;
     flex-direction: column;
-    justify-content: center;
+    flex: 0 0 1;
+    justify-content: stretch;
     align-items: center;
   }
 }
@@ -66,9 +79,23 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 800px) {
+  .header--5 {
+    font-size: 1.25rem;
+    width: 100%;
+  }
+}
+
 .info--content {
   padding: 1rem;
   font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .info--content {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .game {
@@ -80,8 +107,21 @@ body {
   align-items: center;
 }
 
+@media only screen and (max-width: 800px) {
+  .game {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
 .label {
   font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .label {
+    margin-top: 4rem;
+  }
 }
 
 .textarea {
@@ -111,6 +151,14 @@ body {
 .goal {
   /* flex: 1 1 0px; */
   width: 30%;
+}
+
+@media only screen and (max-width: 800px) {
+  .goal {
+    width: 100%;
+    margin-bottom: 2rem;
+    align-self: center;
+  }
 }
 
 .goal--buttons {
@@ -146,6 +194,13 @@ body {
 
 .header--3 {
   font-size: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .header--3 {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .solution {
