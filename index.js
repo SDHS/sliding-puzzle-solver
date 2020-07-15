@@ -281,18 +281,6 @@ class PriorityQueue {
     }
   }
 
-  traverse() {
-    if (this.isEmpty()) {
-      console.log("Empty!");
-      return;
-    }
-    // for (let i = 0; i < this.items.length; i++) {
-    //   process.stdout.write(this.items[i] + "\t");
-    // }
-    // console.log();
-    console.log(this.items);
-  }
-
   getSize() {
     return this.items.length;
   }
@@ -308,7 +296,6 @@ class PriorityQueue {
 
 class Solver {
   constructor(initialBoard, goalCondition) {
-    this.moves = 1;
     this.solution = [];
     let closed = {};
     let open = new PriorityQueue();
